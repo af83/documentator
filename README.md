@@ -43,17 +43,17 @@ Commands should be used from the root directory of the current project.
 
 ### Bootstrap
 
-``` shell
+``` bash
 bundle exec documentator bootstrap
 ```
 
 ### Importing templates
 
-``` shell
+``` bash
 bundle exec documentator list
 ```
 
-``` shell
+``` bash
 bundle exec documentator import nginx
 ```
 
