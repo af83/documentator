@@ -59,7 +59,7 @@ documentator import nginx
 
 ## Contribution
 
-YES. We want contribution.
+YES. We want contributions.
 
 * Adding a bootstrap's file is done by adding a file to
 `lib/documentator/bootstrap`.
