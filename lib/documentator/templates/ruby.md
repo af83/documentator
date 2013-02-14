@@ -2,19 +2,23 @@
 
 ## Install
 
-On the server you need to install some packages
+Our recommandation is to use the most recent Ruby 1.9.3.
 
-Debian, as root:
+Debian doesn't provide official packages for Ruby 1.9.3, but it's possible to
+use other sources for that. We trust Bearstech and use their debian packages.
+You can use them for Ruby by creating a
+`/etc/apt/sources.list.d/bearstech-ruby1.9.3.list` file with this line:
 
-``` shell
-aptitude install ruby1.9.3 ruby1.9.1-dev make libxml2-dev libxslt1-dev g++ git libcurl4-gnutls-dev
+```
+deb http://deb.bearstech.com/squeeze ruby-1.9.3/
 ```
 
-Gems, as a user:
+Then, as root, you can launch the install with:
 
 ``` shell
-gem install bundler && bundle install
+aptitude update && aptitude install ruby1.9.3 ruby1.9.1-dev build-essential libxml2-dev libxslt1-dev libcurl4-gnutls-dev
 ```
+
 
 ## Configuration
 
@@ -43,3 +47,13 @@ EOF
 ```
 
 And source the ~/ruby-env file on top of bashrc.
+
+
+## Gems
+
+To manage our gems, we use a tool called Bundler. So, you can install them
+by going in the application directory and taping this one-liner:
+
+``` shell
+gem install bundler && bundle install
+```
