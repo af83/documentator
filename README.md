@@ -12,9 +12,9 @@ Those are empty, and they *must* be written for each project. This is specific
 to each project:
 
   * What's the architecture (providing a [ditaa](http://ditaa.sourceforge.net/)
-  schema will make you earns some karma points) ?
-  * Dependencies ?
-  * Environnements ?
+  schema will make you earns some karma points)?
+  * Dependencies?
+  * Environnements?
 
 
 As a treat, `bootstrap` generates a Gemfile in `project/doc` which include
@@ -64,7 +64,7 @@ YES. We want contributions.
 * Adding a bootstrap's file is done by adding a file to
 `lib/documentator/bootstrap`.
 * Adding a templates's file is done by adding a file to
-`lib/documentator/bootstrap`.
+`lib/documentator/templates`.
 
 
 ## Copyright
