@@ -207,6 +207,9 @@ Ses principales limitations :
 La gem [stretcher](https://github.com/PoseBiz/stretcher) est née récemment en
 réaction à nombre de ces points. C'est une alternative récente à étudier.
 
+Sinon, il peut être tout aussi intéressant de se faire soi-même un client
+Elasticsearch. (Pour de meilleurs performances, ne pas oublier d'utiliser une
+connexion HTTP persistante.)
 
 ## Outils
 
