@@ -26,6 +26,7 @@ afficher les logs en faisant `desi start --tail`. Pour arrêter le démon, faire
 `desi stop`, tout simplement. Pour les autres options proposées par Desi,
 référez-vous à [la page du projet](https://github.com/AF83/desi).
 
+Par défaut, Elasticsearch tournera sur le port 9200 de _localhost_.
 
 ### Installation sur un serveur
 
