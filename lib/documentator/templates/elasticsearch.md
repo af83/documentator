@@ -40,7 +40,7 @@ pour plus de détails.
 
 Bien que des optimisations aient été apportées pour diminuer sa gourmandise en
 la matière, ES fait une consommation importante de descripteurs de fichiers.
-Les règlages par défaut du nombre maximum de descripteurs de fichiers autorisés
+Les réglages par défaut du nombre maximum de descripteurs de fichiers autorisés
 par utilisateur sur un système Linux sont généralement rapidement atteints,
 avec comme conséquence le message d'erreur `Too many open files`.
 
@@ -127,7 +127,7 @@ Pour s'en prémunir, il convient donc en premier lieu :
   Lucene et donc la charge du système.
 
 
-Au delà de cette premiere mesure, il faut également bien sûr mentionner deux
+Au delà de cette première mesure, il faut également bien sûr mentionner deux
 conseils de bon sens :
 
   * Tâcher autant que faire se peut de déterminer le plus précisément
@@ -154,14 +154,14 @@ permettent de spécifier à ES qu'on veut qu'un même champ soit indexé de
 plusieurs façons à la fois. On pourra dès lors faire des requêtes dessus en
 utilisant la syntaxe `nom_du_champ.nom_du_sous_champ`. On peut donc avoir
 plusieurs sous-champs optimisés chacun pour des cas précis : recherche
-full-texte normale, tri ou facette, autocomplete, etc.
+_full-text_ normale, tri ou facette, auto-complétion, etc.
 
 
 ### Utiliser un champ non "tokenisé" pour effectuer des tris ou des facettes
 
-Afin d'effectuer une recherche full-texte sur un champ de type chaîne de
+Afin d'effectuer une recherche _full-text_ sur un champ de type chaîne de
 caractères, il est nécessaire de lui appliquer tout un certain nombre
-d'opérations (typiquement : segmentation en mots, supression des caractères diacritiques, des
+d'opérations (typiquement : segmentation en mots, suppression des caractères diacritiques, des
 accents, lemmatisation, etc.) Cependant, ces opérations empêcheront d'effectuer
 certaines opérations qui n'ont de sens qu'appliquées sur le contenu exact du
 champ d'origine, notamment :
@@ -170,8 +170,8 @@ champ d'origine, notamment :
 plusieurs mots différents)
 * les facettes
 
-Pour ces deux cas, il conviendra donc donc soit de définir le mapping du champ
-comme `not_analyzed`, soit d'utiliser le mapping `keyword`. Dans le deux cas,
+Pour ces deux cas, il conviendra donc donc soit de définir le _mapping_ du champ
+comme `not_analyzed`, soit d'utiliser le _mapping_ `keyword`. Dans le deux cas,
 il sera indexé tel quel sans segmentation ou modification d'aucune sorte.
 
 Comme indiqué ci-dessus, on peut bien sûr utiliser un *multi-field* si on veut
@@ -179,7 +179,7 @@ indexer le même champ de plusieurs façons à la fois.
 
 ### Utiliser l'endpoint `analyze` pour vérifier la façon dont un texte est segmenté
 
-Pour plus de détails, se réferer [à la documentation](http://www.elasticsearch.org/guide/reference/api/admin-indices-analyze.html)
+Pour plus de détails, se référer [à la documentation](http://www.elasticsearch.org/guide/reference/api/admin-indices-analyze.html)
 
 ### Se méfier des limitations de Tire
 
