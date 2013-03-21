@@ -54,7 +54,7 @@ bundle exec documentator list
 ```
 
 ``` bash
-bundle exec documentator import nginx
+bundle exec documentator import nginx ruby
 ```
 
 ## Contribution
