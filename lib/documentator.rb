@@ -16,15 +16,19 @@ module Documentator
     end
 
     desc "import a template to doc directory"
-    def import(template)
-      unless File.exists?(doc_path)
-        puts "You should run `bootstrap` before trying to import documentation"
-        exit 1
+    def import(*templates)
+      templates.each do |template|
+        begin
+          unless File.exists?(doc_path)
+            puts "You should run `bootstrap` before trying to import documentation"
+            exit 1
+          end
+          cp(templates_path.join("#{template}.md"), doc_path)
+          puts "✓ File #{template} copied."
+        rescue Errno::ENOENT
+          puts "x File #{template} not found."
+        end
       end
-      cp(templates_path.join("#{template}.md"), doc_path)
-      puts "✓ File #{template} copied."
-    rescue Errno::ENOENT
-      puts "x File #{template} not found."
     end
 
     desc "List all templates"
