@@ -208,6 +208,10 @@ Ses principales limitations :
 La gem [stretcher](https://github.com/PoseBiz/stretcher) est née récemment en
 réaction à nombre de ces points. C'est une alternative récente à étudier.
 
+Autres alternatives :
+  * [rubberband](https://github.com/grantr/rubberband)
+  * [elastictastic](https://github.com/brewster/elastictastic)
+
 Sinon, il peut être tout aussi intéressant de se faire soi-même un client
 Elasticsearch. (Pour de meilleurs performances, ne pas oublier d'utiliser une
 connexion HTTP persistante.)
@@ -217,10 +221,17 @@ connexion HTTP persistante.)
 
 ### Librairies
 
-* Ruby: [desi](https://github.com/AF83/desi), [tire](https://github.com/karmi/tire),
-  [stretcher](https://github.com/PoseBiz/stretcher)
+* Ruby
 
-* Javascript : [elastic.js](https://github.com/fullscale/elastic.js)
+  * [desi](https://github.com/AF83/desi)
+  * [tire](https://github.com/karmi/tire)
+  * [stretcher](https://github.com/PoseBiz/stretcher)
+  * [rubberband](https://github.com/grantr/rubberband)
+  * [elastictastic](https://github.com/brewster/elastictastic)
+
+* Javascript
+
+  * [elastic.js](https://github.com/fullscale/elastic.js)
 
 
 ### Outils en ligne de commande
