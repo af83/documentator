@@ -11,7 +11,7 @@ With bundler, add it to your `Gemfile`:
 
 ``` ruby
 group :development do
-  gem "documentator", git: "git@github.com:AF83/documentator.git"
+  gem "documentator"
 end
 ```
 
