@@ -82,10 +82,10 @@ $ bin/plugin install karmi/elasticsearch-paramedic
 
 Ces plugins seront accessibles sur les URLs suivantes :
 
-* http://localhost:9200/_plugin/head/
-* http://localhost:9200/_plugin/inquisitor/
-* http://localhost:9200/_plugin/bigdesk/
-* http://localhost:9200/_plugin/paramedic/
+* http://localhost:9200/\_plugin/head/
+* http://localhost:9200/\_plugin/inquisitor/
+* http://localhost:9200/\_plugin/bigdesk/
+* http://localhost:9200/\_plugin/paramedic/
 
 
 
