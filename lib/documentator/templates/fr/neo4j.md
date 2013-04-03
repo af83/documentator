@@ -7,7 +7,7 @@ la persistance des données sous forme de graphe (noeuds, relations) nativement.
 
 ## Installation
 
-Version recommandé stable en édition 'community': 1.8.2
+Version recommandée stable en édition 'community': 1.8.2
 
 * Debian
 
@@ -32,4 +32,3 @@ via Homebrew
 brew update && brew install neo4j
 neo4j start
 ```
-

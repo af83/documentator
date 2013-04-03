@@ -4,7 +4,7 @@
 
 ## Installation
 
-Version recommandé: 0.4
+Version recommandée : 0.4
 Il est supposé que nodejs est installé dans une version supérieure à 0.8
 
 ``` shell
