@@ -16,7 +16,7 @@ aptitude install libzmq-dev
 Ou pour la branche 3.2:
 
 ``` bash
-aptitude install libzmq-dev
+aptitude install libzmq3-dev
 ```
 
 Et, c'est tout.
