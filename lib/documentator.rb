@@ -16,14 +16,14 @@ module Documentator
     end
 
     desc "import a template to doc directory"
-    def import(*templates)
+    def import(locale, *templates)
       templates.each do |template|
         begin
           unless File.exists?(doc_path)
             puts "You should run `bootstrap` before trying to import documentation"
             exit 1
           end
-          cp(templates_path.join("#{template}.md"), doc_path)
+          cp(templates_path.join(locale, "#{template}.md"), doc_path)
           puts "✓ File #{template} copied."
         rescue Errno::ENOENT
           puts "x File #{template} not found."
@@ -32,9 +32,12 @@ module Documentator
     end
 
     desc "List all templates"
-    def list
-      Dir[templates_path.join("*")].each do |file|
-        puts "* #{File.basename(file, File.extname(file))}"
+    def list(locale = nil)
+      Dir[templates_path.join(locale || "*")].each do |locale|
+        puts "* #{File.basename(locale)}"
+        Dir[templates_path.join(locale, "*")].each do |file|
+          puts "  * #{File.basename(file, File.extname(file))}"
+        end
       end
     end
 
