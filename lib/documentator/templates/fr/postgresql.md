@@ -43,5 +43,8 @@ Redémarrer PostgreSQL pour prendre en compte ce changement de configuration :
 Pour créer un nouvel utilisateur :
 
 ``` bash
-createuser -U postgres MON_NOUVEL_UTILISATEUR
+createuser -U postgres MON_NOUVEL_UTILISATEUR --createdb
 ```
+
+Il peut également être utile de rajouter l'option `--superuser` si
+l'utilisateur pouvoir rajouter des extensions.
