@@ -2,8 +2,8 @@
 
 [The Market Leader Property Graph Database](http://www.neo4j.org/)
 
-Une base de données graphe est un système de stockage supportant 
-la persistance des données sous forme de graphe (noeuds, relations) nativement. 
+Une base de données graphe est un système de stockage supportant
+la persistance des données sous forme de graphe (noeuds, relations) nativement.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Version recommandée stable en édition 'community': 1.8.2
 # start root shell
 sudo -s
 # Import our signing key
-wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - 
+wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add -
 # Create an Apt sources.list file
 echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
 # Find out about the files in our repository

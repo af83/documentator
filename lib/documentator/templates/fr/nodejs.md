@@ -10,7 +10,7 @@ Installation sans droit administrateur.
 prérequis :
 
  * GNU make >= 3.81
- * python == 2.6 ou 2.7. 
+ * python == 2.6 ou 2.7.
 
 ``` shell
 git clone https://github.com/joyent/node.git
