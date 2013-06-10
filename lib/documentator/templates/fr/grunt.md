@@ -32,3 +32,12 @@ Dans la plupart des cas, la tache par défaut permet de construire le projet
 ``` shell
 grunt
 ```
+
+## Auto-complétion
+
+L'auto-complétion est possible pour bash en ajoutant la ligne suivante au
+fichier `$HOME/.bashrc` :
+
+``` bash
+eval "$(grunt --completion=bash)"
+```
