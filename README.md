@@ -59,7 +59,7 @@ bundle exec documentator list fr
 A language must be specified to the `import` command.
 
 ``` bash
-bundle exec documentator import fr beasntalkd mongodb
+bundle exec documentator import fr beanstalkd mongodb
 ```
 
 ## Contribution
